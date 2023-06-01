@@ -1,6 +1,6 @@
 
 
-class Categoria {
+export class Categoria {
     nombre: string;
     descripcion: string;
     imagen: string;

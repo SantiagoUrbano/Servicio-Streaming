@@ -1,16 +1,20 @@
+import { Categoria } from "./categoria.js";
+import { Streamer } from "./streamer.js";
 
 
-class Canal {
+export class Canal {
     nombre: string;
     banner: string;
     streamer: Streamer;
     descripcion: string;
+    categorias: Categoria[]
 
     constructor(nombre: string, banner: string, streamer:Streamer, descripcion: string) {
         this.nombre = nombre;
         this.banner = banner;
         this.streamer = streamer;
         this.descripcion = descripcion;
+        this.categorias = []
     }
 
     obtenerNombre() {
@@ -27,5 +31,13 @@ class Canal {
 
     obtenerDescripcion() {
         return this.descripcion;
+    }
+
+    agregarCategoria(categoria: Categoria): void {
+        this.categorias.push(categoria);
+    }
+
+    obtenerCategoria(): Categoria[] {
+        return this.categorias;
     }
 }

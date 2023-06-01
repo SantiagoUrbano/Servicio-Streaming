@@ -1,6 +1,6 @@
 
 
-class RedSocial {
+export class RedSocial {
     nombre: string;
     url: string;
 

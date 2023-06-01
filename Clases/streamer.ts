@@ -1,6 +1,7 @@
+import { RedSocial } from "./RedSocial.js";
 
 
-class Streamer {
+export class Streamer {
     nickname: string;
     descripcion: string;
     redesSociales: RedSocial[]

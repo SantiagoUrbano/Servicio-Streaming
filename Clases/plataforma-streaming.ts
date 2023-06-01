@@ -1,6 +1,7 @@
+import { Canal } from "./canal.js";
 
 
-class Plataforma {
+export class Plataforma {
     nombre: string;
     logo: string;
     descripcion: string;
